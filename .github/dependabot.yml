@@ -1,0 +1,26 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: Microsoft.Net.Compilers
+    versions:
+    - 3.8.0
+  - dependency-name: Microsoft.ApplicationInsights.DependencyCollector
+    versions:
+    - 2.16.0
+  - dependency-name: Microsoft.ApplicationInsights
+    versions:
+    - 2.16.0
+  - dependency-name: Microsoft.ApplicationInsights.PerfCounterCollector
+    versions:
+    - 2.16.0
+  - dependency-name: Microsoft.ApplicationInsights.WindowsServer
+    versions:
+    - 2.16.0
+  - dependency-name: jQuery
+    versions:
+    - 3.5.1
